@@ -5,24 +5,24 @@
 daftarKontak = [
     {
         'No ID' : '101',
-        'Nama' : 'Khabib',
-        'Email' : 'khabib29@gmail.com',
+        'Nama' : 'RSUD ABC',
+        'Email' : 'rsud_abc@gmail.com',
         'No Telepon' : '089237582900',
-        'Alamat' : 'Dagestan'
+        'Alamat' : 'Jln Jend.A.Yani no.12'
     },
     {
         'No ID' : '102',
-        'Nama' : 'Connor',
-        'Email' : 'connormcg@gmail.com',
+        'Nama' : 'Polsek ABC',
+        'Email' : 'polsekabc@gmail.com',
         'No Telepon' : '083957295787',
-        'Alamat' : 'Crumlin'
+        'Alamat' : 'Jln Jend.Sudirman no.120'
     },
     {
         'No ID' : '103',
-        'Nama' : 'George',
-        'Email' : 'george.gsp@gmail.com',
+        'Nama' : 'DAMKAR ABC',
+        'Email' : 'damkar_abc@gmail.com',
         'No Telepon' : '089385736347',
-        'Alamat' : 'St-Isidore'
+        'Alamat' : 'Jln Pemuda no.93'
     }
 ]
 
@@ -34,7 +34,7 @@ def database (listData) :
         print('{}\t| {}  \t| {}     \t| {}\t| {}'.format(listData[i]['No ID'], listData[i]['Nama'], listData[i]['Email'], 
         listData[i]['No Telepon'], listData[i]['Alamat']))
 
-# Fungsi filter dictionary 
+# Fungsi filter dictionary 4
 def searchList (Input) :
     searchList = (list(filter(lambda data: data['No ID'] == str(Input), daftarKontak)))
     return searchList
