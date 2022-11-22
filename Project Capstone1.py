@@ -34,7 +34,7 @@ def database (listData) :
         print('{}\t| {}  \t| {}     \t| {}\t| {}'.format(listData[i]['No ID'], listData[i]['Nama'], listData[i]['Email'], 
         listData[i]['No Telepon'], listData[i]['Alamat']))
 
-# Fungsi filter dictionary 4
+# Fungsi filter dictionary 
 def searchList (Input) :
     searchList = (list(filter(lambda data: data['No ID'] == str(Input), daftarKontak)))
     return searchList
